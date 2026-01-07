@@ -49,23 +49,6 @@
           <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
           <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
           <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
-          <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>
           <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
         </ul>
       </nav>
@@ -224,7 +207,7 @@
               </div>
 
               <div class="cta-section">
-                <a href="#" class="btn btn-primary">
+                <a href="assets/profile/sairam_resume.pdf" class="btn btn-primary" download>
                   <i class="bi bi-download"></i>
                   Download Resume
                 </a>
@@ -458,7 +441,6 @@
                   <li data-filter=".filter-Hook-videos">Hook-videos</li>
                   <li data-filter=".filter-AI-Videos">AI-Videos</li>
                   <li data-filter=".filter-Post">Post</li>
-                  <li data-filter=".filter-nature">Nature</li>
                 </ul>
               </div>
             </div>
@@ -468,16 +450,19 @@
 
                 <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-AI-Videos">
                   <div class="portfolio-wrap">
-                     <video width="363px" height="360px" controls autoplay muted style="position:relative; z-index:2;">
+                    <div class="video-thumbnail" style="position:relative;cursor:pointer;">
+                      <video width="363px" height="360px" muted style="pointer-events:none;filter:brightness(0.7);">
                         <source src="assets/img/portfolio/education.mp4" type="video/mp4">
-                    </video>
+                      </video>
+                      <div class="play-btn" data-video-src="assets/img/portfolio/education.mp4" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:60px;color:white;z-index:3;pointer-events:auto;">
+                        <i class="bi bi-play-circle-fill"></i>
+                      </div>
+                    </div>
                     <div class="portfolio-info">
                       <div class="content">
                         <span class="category">Photography</span>
                         <h4>Capturing Moments</h4>
                         <div class="portfolio-links">
-                          <a href="assets/img/portfolio/portfolio-portrait-1.webp" class="glightbox" title="Capturing Moments"><i class="bi bi-plus-lg"></i></a>
-                          <a href="portfolio-details.html" title="More Details"><i class="bi bi-arrow-right"></i></a>
                         </div>
                       </div>
                     </div>
@@ -492,8 +477,6 @@
                         <span class="category">Web Design</span>
                         <h4>Woodcraft Design</h4>
                         <div class="portfolio-links">
-                          <a href="assets/img/portfolio/portfolio-2.webp" class="glightbox" title="Woodcraft Design"><i class="bi bi-plus-lg"></i></a>
-                          <a href="portfolio-details.html" title="More Details"><i class="bi bi-arrow-right"></i></a>
                         </div>
                       </div>
                     </div>
@@ -509,8 +492,6 @@
                         <span class="category"></span>
                         <h4></h4>
                         <div class="portfolio-links">
-                          <a href="assets/img/portfolio/portfolio-portrait-2.webp" class="glightbox" title="Classic Beauty"><i class="bi bi-plus-lg"></i></a>
-                          <a href="portfolio-details.html" title="More Details"><i class="bi bi-arrow-right"></i></a>
                         </div>
                       </div>
                     </div>
@@ -519,16 +500,19 @@
 
                 <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-AI-Videos">
                   <div class="portfolio-wrap">
-                    <video width="363px" height="360px" controls autoplay muted style="position:relative; z-index:2;">
+                    <div class="video-thumbnail" style="position:relative;cursor:pointer;">
+                      <video width="363px" height="360px" muted style="pointer-events:none;filter:brightness(0.7);">
                         <source src="assets/img/portfolio/online.mp4" type="video/mp4">
-                    </video>
+                      </video>
+                      <div class="play-btn" data-video-src="assets/img/portfolio/online.mp4" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:60px;color:white;z-index:3;pointer-events:auto;">
+                        <i class="bi bi-play-circle-fill"></i>
+                      </div>
+                    </div>
                     <div class="portfolio-info">
                       <div class="content">
-                        <span class="category">Nature</span>
+                        <span class="category"></span>
                         <h4>Natural Growth</h4>
                         <div class="portfolio-links">
-                          <a href="assets/img/portfolio/portfolio-portrait-4.webp" class="glightbox" title="Natural Growth"><i class="bi bi-plus-lg"></i></a>
-                          <a href="portfolio-details.html" title="More Details"><i class="bi bi-arrow-right"></i></a>
                         </div>
                       </div>
                     </div>
@@ -537,16 +521,19 @@
 
                 <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-Hook-videos">
                   <div class="portfolio-wrap">
-                     <video width="363px" height="360px" controls autoplay muted style="position:relative; z-index:2;">
+                    <div class="video-thumbnail" style="position:relative;cursor:pointer;">
+                      <video width="363px" height="360px" muted style="pointer-events:none;filter:brightness(0.7);">
                         <source src="assets/img/portfolio/pan.mp4" type="video/mp4">
-                    </video>
+                      </video>
+                      <div class="play-btn" data-video-src="assets/img/portfolio/pan.mp4" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:60px;color:white;z-index:3;pointer-events:auto;">
+                        <i class="bi bi-play-circle-fill"></i>
+                      </div>
+                    </div>
                     <div class="portfolio-info">
                       <div class="content">
                         <span class="category">Photography</span>
                         <h4>Urban Stories</h4>
                         <div class="portfolio-links">
-                          <a href="assets/img/portfolio/portfolio-5.webp" class="glightbox" title="Urban Stories"><i class="bi bi-plus-lg"></i></a>
-                          <a href="portfolio-details.html" title="More Details"><i class="bi bi-arrow-right"></i></a>
                         </div>
                       </div>
                     </div>
@@ -555,16 +542,19 @@
 
                 <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-Hook-videos">
                   <div class="portfolio-wrap">
-                     <video width="363px" height="360px" controls autoplay muted style="position:relative; z-index:2;">
+                    <div class="video-thumbnail" style="position:relative;cursor:pointer;">
+                      <video width="363px" height="360px" muted style="pointer-events:none;filter:brightness(0.7);">
                         <source src="assets/img/portfolio/tom.mp4" type="video/mp4">
-                    </video>
+                      </video>
+                      <div class="play-btn" data-video-src="assets/img/portfolio/tom.mp4" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:60px;color:white;z-index:3;pointer-events:auto;">
+                        <i class="bi bi-play-circle-fill"></i>
+                      </div>
+                    </div>
                     <div class="portfolio-info">
                       <div class="content">
                         <span class="category">Web Design</span>
                         <h4>Digital Experience</h4>
                         <div class="portfolio-links">
-                          <a href="assets/img/portfolio/portfolio-6.webp" class="glightbox" title="Digital Experience"><i class="bi bi-plus-lg"></i></a>
-                          <a href="portfolio-details.html" title="More Details"><i class="bi bi-arrow-right"></i></a>
                         </div>
                       </div>
                     </div>
@@ -577,6 +567,18 @@
 
         </div>
 
+      </div>
+
+      <!-- Video Modal -->
+      <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content" style="background:transparent;border:none;box-shadow:none;">
+            <div class="modal-body p-0" style="position:relative;">
+              <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close" style="z-index:10;"></button>
+              <video id="modalVideo" width="100%" controls style="background:black;max-height:80vh;display:block;margin:auto;"></video>
+            </div>
+          </div>
+        </div>
       </div>
 
     </section><!-- /Portfolio Section -->
@@ -993,6 +995,30 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+    // Video popup logic
+    document.addEventListener('DOMContentLoaded', function() {
+      var playBtns = document.querySelectorAll('.play-btn');
+      var modal = document.getElementById('videoModal');
+      var modalVideo = document.getElementById('modalVideo');
+      playBtns.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          var src = btn.getAttribute('data-video-src');
+          modalVideo.src = src;
+          var bsModal = new bootstrap.Modal(modal);
+          bsModal.show();
+          modalVideo.play();
+          // Pause and reset video when modal closes
+          modal.addEventListener('hidden.bs.modal', function handler() {
+            modalVideo.pause();
+            modalVideo.currentTime = 0;
+            modal.removeEventListener('hidden.bs.modal', handler);
+          });
+        });
+      });
+    });
+  </script>
 
 </body>
 

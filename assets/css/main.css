@@ -1118,6 +1118,18 @@ section,
   transform: translateY(-2px);
 }
 
+/* Fix for long email addresses overflowing in contact links on mobile */
+@media (max-width: 575.98px) {
+  .contact-links .contact-item {
+    display: block;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 0.95rem;
+  }
+}
+
 /*--------------------------------------------------------------
 # Stats Section
 --------------------------------------------------------------*/
@@ -1479,7 +1491,7 @@ section,
 .resume .resume-section .resume-item h5 {
   font-size: 1rem;
   margin-bottom: 0.5rem;
-  color: var(--accent-color);
+  color: var (--accent-color);
 }
 
 .resume .resume-section .resume-item .company {
@@ -2224,6 +2236,66 @@ section,
 
 .contact .contact-form .btn:hover {
   background-color: color-mix(in srgb, var(--accent-color), var(--contrast-color) 20%);
+}
+
+/* Make the email input smaller and text smaller */
+.contact .contact-form input[type="email"].form-control {
+  font-size: 0.9rem;
+  padding: 0.4rem 0.75rem;
+  height: 2rem;
+}
+
+/* Responsive email fix for contact info */
+@media (max-width: 576px) {
+  .contact-info li {
+    font-size: 11px !important;
+    word-break: break-all !important;
+    overflow-wrap: anywhere !important;
+    white-space: normal !important;
+    padding: 6px 8px;
+    background: #fff;
+    color: #222;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .contact-info li i {
+    margin-right: 6px;
+    flex-shrink: 0;
+    font-size: 1.1em;
+  }
+  .contact-info li a, .contact-info li span, .contact-info li {
+    font-size: 11px !important;
+    max-width: 100%;
+    display: inline-block;
+    line-height: 1.1;
+  }
+}
+
+@media (max-width: 400px) {
+  .contact-info li {
+    font-size: 9px !important;
+    padding: 4px 2px;
+  }
+  .contact-info li a, .contact-info li span, .contact-info li {
+    font-size: 9px !important;
+  }
+}
+
+/* Responsive fix for email input overflow on mobile */
+@media (max-width: 575.98px) {
+  .contact .contact-form input[type="email"].form-control {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.75rem;
+    height: 2rem;
+    width: 100%;
+    box-sizing: border-box;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }
 
 /*--------------------------------------------------------------
