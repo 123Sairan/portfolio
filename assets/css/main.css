@@ -424,7 +424,7 @@ h6 {
   object-fit: cover;
   display: block;
   border: 4px solid rgba(255,255,255,0.08);
-  border-radius: 4px; /* square-ish corners; set to 0 for perfectly square corners */
+  border-radius: 30px;
 }
 
 /* keep the modal video free to scale full-width */
